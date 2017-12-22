@@ -1,0 +1,108 @@
+/* Override bootstrap column paddings */
+#s2 .container-fluid {
+/*    padding: 0;*/
+}
+
+.gallery1 .row{
+    margin: 0;
+    margin-left: -10px;
+    overflow: hidden;
+}
+.gallery1 .row > div {
+    padding: 5px 0 5px 10px;
+}
+
+.gallery1 .lightbox {
+    position: relative;
+    display: block;
+    padding:0;
+    overflow: hidden;
+}
+
+/*.gallery1 .lightbox img
+margin:0;{*/
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+    transition: 1s;
+    transform: scale(1);
+}
+
+.gallery1 .lightbox:hover img {
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+.gallery1 .caption {
+    background-color: rgba(10, 10, 10, 0.5);
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    opacity: 0;
+    color: #fff;
+    z-index: 1000;
+    transition: 0.4s;
+}
+
+.gallery1 .caption * {
+    flex-basis:100%;
+}
+
+.gallery1 .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -24px;
+    margin-left: -16px;
+    opacity: 0;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'FontAwesome';
+    content: '\f00e';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+.gallery1 .lightbox:hover:before {
+    opacity: 1;
+}
+
+.gallery1 .caption h4 {
+    display: none;
+}
+
+.gallery1 .caption p {
+    margin:0;
+    padding:0;
+}
+
+.gallery1 .caption {
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height:100%;
+    display: flex;
+    opacity: 0;
+    color: #fff;
+    transition: 0.4s;
+}
+
+
+.gallery1 .lightbox:hover .caption {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
